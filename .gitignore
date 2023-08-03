@@ -4,3 +4,7 @@ node_modules
 /build
 /public/build
 .env
+/_Apuntes
+opciones-sublime.sublime-project
+opciones-sublime.sublime-workspace
+contenedor.js
