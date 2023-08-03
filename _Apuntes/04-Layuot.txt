@@ -1,0 +1,310 @@
+Anteriormente creamos las rutas hacia las distintas paginas de nuestro sitio("/", "/blog", "/guitarras", "/nosotros") mismas que por el momento solo podemos accesar ingresandola en la barra de direcciones del navegador.
+
+1) Creamos ⁡⁣⁣⁢"Header.jsx"⁡ en ⁡⁣⁣⁢"/app/components/"⁡
+  En nuestro "Header" crearemos una barra de barra de navegacion para poder ingresar a las diferentes rutas de manera mas sencilla.
+
+  ⁡⁣⁣⁢---------------------------------------------⁡
+  ⁡⁣⁢⁣export default function Header() {
+    return (
+      <div>Componente "Header"</div>
+    )
+  }⁡
+  ⁡⁣⁣⁢---------------------------------------------⁡
+
+2) Lo importamos en ⁡⁣⁣⁢"/app/root.jsx"⁡ y usamos en ⁡⁣⁣⁢"Document()"⁡
+  ⁡⁣⁣⁢---------------------------------------------⁡
+  ⁡⁣⁢⁣import Header from "./components/Header"⁡
+
+  ⁡⁣⁣⁢function Document({children}){
+      return(
+        <html lang="es">
+          <head>...</head>
+          <body>⁡
+            ⁡⁣⁢⁣<Header/>⁡
+            ⁡⁣⁣⁢{children}
+          </body>
+        </html>
+      )
+    }
+  ---------------------------------------------⁡
+
+⁡⁢⁣⁣3) El caracter "~" como alias a "/app"⁡
+
+  a) Se usa para eliminar la notacion de "ruta relativa" 
+    
+    Supongamos la siguiente estructura de archivos:
+    ⁡⁣⁣⁢---------------------------------------------
+      📁app
+        📁components
+          📁guitarras
+            ⁡⁣⁢⁣📄 ListaGuitarras.jsx⁡
+        ⁡⁣⁣📁⁢⁡⁣⁣⁢routes⁡
+          📁⁡⁣⁣⁢guitarra⁡
+            ⁡⁣⁢⁣📄 listado.jsx⁡
+    ⁡⁣⁣⁢---------------------------------------------⁡
+
+    Y Deseamos importar el Componente ⁡⁣⁣⁢"ListaGuitarras"⁡ en la ruta  ⁡⁣⁣⁢"/guitarras/listado"⁡
+
+    *) Como podemos ver "listado.jsx" esta en la carpeta "guitarra" 
+      ⁡⁣⁣⁢---------------------------------------------
+      /app/routes/⁡⁣⁢⁣guitarra⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+    *) Con ⁡⁣⁢⁣"../"⁡⁡ vamos una carpeta hacia atras
+      ⁡⁣⁣⁢---------------------------------------------
+      /app/⁡⁣⁢⁣routes⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+    *) ⁡⁣⁣⁢⁡⁣⁢⁣"../../"⁡⁡ otra carpeta hacia atras
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣/app⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+    *) ⁡⁣⁢⁣"../../components"⁡ vamos hacia "components"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣/app/components⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+    *) ⁡⁣⁢⁣"../../components/guitarras"⁡ despues hacia "guitarras"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣/app/components/guitarras⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+    *) ⁡⁣⁢⁣"../../components/guitarras/ListaGuitarras.jsx"⁡ obtiene el archivo "ListaGuitarras.jsx"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣/app/components/guitarras/ListaGuitarras.jsx⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+  b) Usando  ⁡⁣⁣⁢"~"⁡ como ⁡⁣⁣⁢alias de "/app"⁡
+    Anteriormente tuvimos que retroceder 2 directorios ⁡⁣⁣⁢"../../"⁡ para llegar hacia "/app" y posteriormente indicar la ruta en donde se encontraba el componente que necesitabamos(ListaGuitarras.jsx).
+
+    Como en "remix" todo nuestro proyecto esta en la carpeta "/app" usamos el caracter "~" para elaborar referencias directas y no relativas como en el inciso "a"
+
+    Por lo anterior para referirnos a 
+    ⁡⁡⁣⁣⁢---------------------------------------------
+    "⁡⁡⁣⁢⁣⁡⁢⁢⁢⁡⁣⁢⁣/app⁡⁡⁣⁣⁢/components/guitarras/ListaGuitarras.jsx"
+    ---------------------------------------------⁡
+    
+    usaremos
+    ⁡⁣⁣⁢---------------------------------------------
+    "⁡⁡⁣⁢⁣⁡⁣⁢⁣~⁡⁡⁣⁣⁢/components/guitarras/ListaGuitarras"
+    ---------------------------------------------⁡
+
+    en lugar de 
+    ⁡⁣⁣⁢---------------------------------------------
+    "⁡⁡⁣⁢⁣../..⁡⁡⁣⁣⁢/components/guitarras/ListaGuitarras.jsx"
+    ---------------------------------------------⁡
+
+4) Funcion "meta" y "links"(paginas ✅  - componentes ❌) 
+  La funcion "meta" permite modificar o agregar un metadato(charset, title, viewport)
+
+  Y la funcion "links" permite: cargar estilos, fuentes.
+
+  Ambas SOLO FUNCIONAN en paginas(/app/routes) NO en componentes
+
+  a) Cambiamos el titulo a la pagina "Nosotros"
+    ⁡⁣⁣⁢---------------------------------------------⁡
+    ⁡⁣⁢⁣export function meta(){
+      return(
+        {
+          title: "GuitarLA - Nosotros"
+        }
+      )
+    }⁡
+
+
+    ⁡⁣⁣⁢export default function Nosotros() {
+      return (
+        <h1>Desde "/nosotros"</h1>
+      );
+    }
+    ---------------------------------------------⁡
+
+  b) En el navegador veremos algo como esto
+    ⁡⁢⁢⁢---------------------------------------------
+    <head>
+      <meta charset="utf-8" />⁡
+      ⁡⁣⁢⁣<title>GuitarLA - Nosotros</title>⁡
+    ⁡⁢⁢⁢</head>
+    ---------------------------------------------⁡
+
+  c) Tratemos ahora de cambiar el titulo en el componente "Header" 
+    ⁡⁣⁣⁢---------------------------------------------⁡
+    ⁡⁣⁢⁣export function meta(){
+      return(
+        {
+          title: "GuitarLA - Header"
+        }
+      )
+    }⁡
+
+
+    ⁡⁣⁣⁢export default function Header() {
+      return (
+        <div>Componente "Header"</div>
+      );
+    }
+    ---------------------------------------------⁡
+
+
+  d) El componente "Header" se carga en todas la paginas. 
+  
+    *) Ingresemos a  la pagina "guitarras" y consultemos el codigo generado en el navegador, veremos que el componente header no modifico el titulo de dicha pagina.
+
+    ⁡⁢⁢⁢---------------------------------------------
+    <head>
+      <meta charset="utf-8" />⁡
+      ⁡⁣⁢⁣<title>GuitarLA - remix</title>⁡
+    ⁡⁢⁢⁢</head>
+    ---------------------------------------------⁡
+
+    
+  e) Lo mismo pasará al cargar estilos NO funcionará en los componentes, a diferencia de la paginas(/app/routes)
+
+5) Estructura del "Header"
+  
+  a) Agrupamos nuestro contenido en etiqueta "header"
+    ⁡⁣⁣⁢---------------------------------------------
+    export default function Header() {
+      return (⁡
+        ⁡⁣⁢⁣<header></header>⁡
+      ⁡⁣⁣⁢)
+    }
+    ---------------------------------------------⁡
+
+  b) Insertaremos una imagen(queda pendiente)
+    ⁡⁣⁣⁢---------------------------------------------
+    <header>⁡
+      ⁡⁣⁢⁣<div>Aqui va una imagen</div>⁡
+    ⁡⁣⁣⁢</header>
+    ---------------------------------------------⁡
+  
+  c) Creamos la navegacion
+    ⁡⁣⁣⁢---------------------------------------------
+    <header>
+      ---IMAGEN⁡
+      ⁡⁣⁢⁣<nav></nav>⁡
+    ⁡⁣⁣⁢</header>
+    ---------------------------------------------⁡
+
+    *) Usaremos el componente "Link" de "@remix-run/react" en lugar del enlace tradicional  "<a></a>" ya que el primero no recarga la pagina.
+    ⁡⁣⁣⁢---------------------------------------------⁡
+    ⁡⁣⁢⁣import { Link } from "@remix-run/react"⁡
+
+    ⁡⁣⁣⁢export default function Header() {
+      return (
+        <header>
+          ---IMAGEN
+          <nav>⁡
+            ⁡⁣⁢⁣<Link>Inicio</Link>
+            <Link>Tienda</Link>
+            <Link>Blog</Link>
+            <Link>Nosotros</Link>⁡
+          ⁡⁣⁣⁢</nav>
+        </header>
+      )
+    ---------------------------------------------⁡
+
+    *) Con ayuda del atributo "to" definimos hacia que pagina redireccionaremos al usuario una vez que lo presione
+    ⁡⁣⁣⁢---------------------------------------------
+    <nav>
+      <Link⁡⁡⁣⁣⁢ ⁡⁣⁢⁣to="/"⁡⁡⁣⁣⁢>Inicio</Link>
+      <Link⁡ ⁡⁣⁢⁣to="/guitarras"⁡⁡⁣⁣⁢>Tienda</Link>
+      <Link⁡ ⁡⁣⁢⁣to="/blog"⁡⁡⁣⁣⁢>Blog</Link>
+      <Link⁡ ⁡⁣⁢⁣to="/nosotros"⁡⁡⁣⁣⁢>Nosotros</Link>
+    </nav>
+    ---------------------------------------------⁡
+
+  d) Mejora en la navegacion con el componente ⁡⁣⁣⁢"Scripts"⁡
+    Cuando usamos la barra de navegacion se recarga la pagina(se muestra un ligero flasheo)
+
+    Usaremos el componente "Script" de "@remix-run/react" el cual incorpora una serie de mejoras entre ellas que al navegar hacia otra pagina no se recargue.
+
+    *) Importamos "Scripts" en "/app/root.jsx"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣import {  Scripts } from "@remix-run/react⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+    *) Lo usamos al final de "Body" de" Document"
+      ⁡⁣⁣⁢---------------------------------------------
+      function Document({ children }) {
+        return (
+          <html lang="es">
+            <head> ...</head>
+            <body>
+              <Header />
+              {children}⁡
+              ⁡⁣⁢⁣<Scripts/>⁡
+            ⁡⁣⁣⁢</body>
+          </html>
+        );
+      }
+      ---------------------------------------------⁡
+
+  e) ⁡⁣⁣⁢"LiveReload"⁡ para reflejar cambios en nuestro codigo
+    Hasta este momento, cada que hacemos un cambio en nuestro sitio tenemos que recargar manualmente(F5) para visualizarlos.
+
+    *) Importamos "LiveReload" en "/app/root.jsx"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣import {  LiveReload } from "@remix-run/react⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+    *) Lo usamos al final de "Body" de" Document"
+      ⁡⁣⁣⁢---------------------------------------------
+      function Document({ children }) {
+        return (
+          <html lang="es">
+            <head> ...</head>
+            <body>
+              <Header />
+              {children}
+              <Scripts/>⁡
+              ⁡⁣⁢⁣<LiveReload/>⁡
+            ⁡⁣⁣⁢</body>
+          </html>
+        );
+      }
+      ---------------------------------------------⁡
+
+      NOTA: Hay que ⁡⁣⁣⁢detener y lanzar nuevamente el servidor⁡ para que "LiveReload" funcione de manera adecuada.
+    
+6) Agregando una imagen
+  
+  a) "remix" no cuenta con un manejador de imagenes propio asi que usaremos la etiqueta "img"
+    ⁡⁣⁣⁢---------------------------------------------
+    <header>
+      <div>⁡
+        ⁡⁣⁢⁣<img/>⁡
+      ⁡⁣⁣⁢<div>
+    </header>
+    ---------------------------------------------⁡
+
+  b) Previamente guardamos las imagenes que vamos a usar en ⁡⁣⁣⁢"/public/img⁡"
+  
+
+    *) Importamos la imagen "logo.svg" ubicada en "/public/img"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣import logo from "../../public/img/logo.svg"⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      
+      NOTAS: 
+      -) "/public" esta al ⁡⁣⁣⁢mismo nivel⁡ que "/app"
+
+      -) De manera automatica se crea un archivo en ⁡⁣⁣⁢"/build/_assets/"⁡ que este caso se llama ⁡⁣⁣⁢"logo-YZ2KDQEU.svg"⁡.
+
+      -) El valor de "logo" será ⁡⁣⁣⁢"/build/_assets/logo-YZ2KDQEU.svg"⁡
+
+    *) Usamos "logo" como valor de la propiedad "src" de "img" 
+      ⁡⁣⁣⁢---------------------------------------------
+      <div>
+        <img⁡ ⁡⁣⁢⁣src={logo}⁡ ⁡⁣⁣⁢alt="Imagen del Logo" />
+      </div>
+      ---------------------------------------------⁡
+
+    *) Normalmente al hacer click sobre el logo nos lleva a "Inicio" asi que cambiamos el "div" por un "Link"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣<Link to="/">⁡
+        ⁡⁣⁣⁢<img src={logo} alt="Imagen del Logo" />⁡
+      ⁡⁣⁢⁣</Link>⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+

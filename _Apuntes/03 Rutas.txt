@@ -1,0 +1,65 @@
+Tanto en "remix" como en "NextJs" tienen un sistema basados en rutas.
+
+Vamos a implementar las siguientes rutas en nuestro sitio:
+*) "/"
+*) "/blog"
+*) "/guitarras
+*) "/nosotros"
+
+⁡⁢⁣⁣1) Crear una ruta⁡
+  Para generar una ruta basta con crear el archivo nombrado en minusculas dentro de "/app/routes/" 
+
+  El nombre que le coloquemos a ese archivo automáticamente Remix va a crearle una URL(por regla las URLs tienen que ser en minúsculas.)
+
+  De manera predeterminada cuando se genera un proyecto en "remix" se incluye la ruta raiz "/" misma que se define en "/app/routes/index.jsx"
+
+  a) Creando la ruta "/blog"
+
+    Para ellos debemos generar el archivo ⁡⁣⁣⁢"blog.jsx"⁡ en ⁡⁣⁣⁢"/app/routes/"⁡
+    ⁡⁣⁣⁢---------------------------------------------⁡
+    ⁡⁣⁢⁣export default function Blog() {
+      return (
+        <h1>Desde la ruta "/Blog"</h1>
+      );
+    }⁡
+    ⁡⁣⁣⁢---------------------------------------------⁡
+
+    NOTAS:
+    -) El nombre debe estar en minusculas
+    -) La declaración del componente o de la página lo podemos hacer en mayúsculas como si fueran componentes de React.
+
+  b) Probando la ruta "/blog"
+    Cuando ingresamos a la ruta "/blog" contrario a lo que se esperaba el 
+    navegador no muestra el titulo << Desde la ruta "/Blog" >>
+
+    Para solucionar esto tendremos que agregar el componente "Outlet"(permite inyectar contenido en otro componente ) en la funcion "app()" de  "/app/root.jsx" 
+
+      *) Primero importamos "Outlet"
+      ⁡⁣⁣⁢---------------------------------------------⁡
+      ⁡⁣⁢⁣import { Outlet } from "@remix-run/react"⁡
+      ⁡⁣⁣⁢---------------------------------------------⁡
+
+      *) Posteriormente lo usamos en "app()"
+      ⁡⁣⁣⁢---------------------------------------------
+      export default function App(){
+        return(
+          <Document>⁡
+            ⁡⁣⁢⁣<Outlet/>⁡
+          ⁡⁣⁣⁢</Document>
+        )
+      }
+      ---------------------------------------------⁡
+
+      NOTA: Se van a ir inyectando dentro de este "Outlet"
+      -) Todas las páginas que vayamos creando
+      -) Los componentes que usen esas paginas  
+      -) Las rutas 
+
+⁡⁢⁣⁣2) Creando "subrutas"⁡
+  Podemos agrupar nuestras rutas colocando la mismas dentro de una carpeta
+
+  a) Creando la ruta ⁡⁣⁣⁢"/clientes/crear"⁡
+    -) Basta con crear la carpeta ⁡⁣⁣⁢"clientes"⁡ en ⁡⁣⁣⁢"/app/routes/"⁡ y 
+    -) El archivo ⁡⁣⁣⁢"crear.jsx"⁡ dentro de dicha carpeta
+
+

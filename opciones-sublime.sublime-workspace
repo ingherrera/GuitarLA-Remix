@@ -1,0 +1,354 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bl",
+				"blueviolet"
+			],
+			[
+				"ite",
+				"itemState"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"term",
+				"Terminal: Open"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"T",
+				"Terminal: Open"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 373.0,
+		"history":
+		[
+			"clear",
+			"dir",
+			"ls",
+			"CLS",
+			"cd",
+			"ls",
+			"dir"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan"
+	],
+	"file_history":
+	[
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/guitarras/[url].js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/components/layout.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/404.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/node_modules/next/error.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/package.json",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/components/footer.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/nosotros.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/_app.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/styles/globals.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/components/guitarra.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/styles/guitarras.module.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/tienda.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/app/styles/guitarras.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/app/routes/blog/$postUrl.jsx",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/components/header.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/index.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/next.config.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/styles/nosotros.module.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/styles/footer.module.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/app/styles/index.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/app/components/Header.jsx",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/styles/header.module.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/app/components/Navegacion.jsx",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/_document.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next-juan/pages/blog.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/components/header.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/components/layout.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/pages/nosotros.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/pages/_document.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/pages/tienda.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/pages/blog.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/pages/_app.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/pages/index.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/styles/header.module.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/styles/globals.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/styles/grid.module.css",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/components/footer.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/pages/404.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/opciones-sublime.sublime-project",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/tsconfig.json",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/opciones-sublime.sublime-project",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/contenedor.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/package-lock.json",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/_Apuntes/04-Layuot.txt",
+		"/C/Program Files/Sublime Text 3/sublime-remix.sublime-project",
+		"/D/curso/Actualizacion React 2022/GuitarLA/sublime_remix.sublime-workspace",
+		"/D/curso/Actualizacion React 2022/GuitarLA/sublime_remix.sublime-project",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/package.json",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/_Apuntes/01 Remix.txt",
+		"/D/curso/Actualizacion React 2022/GuitarLA/guitarla-next/README.md",
+		"/D/curso/Actualizacion React 2022/GuitarLA/prueba/src/pages/index.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/prueba/docusaurus.config.js",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/styles/index.css",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/curso.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/index.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/styles/curso.css",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/footer.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/root.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/guitarras/$guitarraUrl.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/guitarras/index.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/listado-guitarras.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/models/guitarras.server.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix/.env",
+		"/D/curso/Actualizacion React 2022/GuitarLA/Apuntes/sidebars.js",
+		"/D/curso/Actualizacion React 2022/GuitarLA/root.jsx",
+		"/D/curso/Actualizacion React 2022/GuitarLA/apuntes-ok/package.json",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix1/_Apuntes/code.html",
+		"/C/Users/Pascual/AppData/Local/Programs/Microsoft VS Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix1/_Apuntes/resumen.txt",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix1/_Apuntes/04-Layuot copy.txt",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix1/_Apuntes/04-Layuot.txt",
+		"/D/curso/Actualizacion React 2022/GuitarLA/GuitarLA-remix1/_Apuntes/01 Remix.txt",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/listado-posts.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/package.json",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/models/posts.server.js",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/blog.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/blog/$postUrl.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/blog/index.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/styles/blog.css",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/utils/helpers.js",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/post.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/styles/guitarras.css",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/guitarras.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/guitarra.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/jsconfig.json",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/entry.client.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/routes/nosotros.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/styles/nosotros.css",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/navegacion.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/components/header.jsx",
+		"/D/curso/Actualizacion React 2022/crm-clientes/_Apuntes/04-layout.js",
+		"/C/Users/Pascual/Desktop/yo/yo.txt",
+		"/C/Users/Pascual/.vscode/extensions/.obsolete",
+		"/C/Users/Pascual/Desktop/bonito.js",
+		"/D/curso/Actualizacion React 2022/crm-clientes/_Apuntes/02-maquetacion-CSS .js",
+		"/D/curso/Actualizacion React 2022/crm-clientes/_Apuntes/03-routing.js",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/remix.config.js",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/entry.server.jsx",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/.eslintrc",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/app/models/curso.server.js",
+		"/D/curso/bienesraices(regresarlo a react)/bienesraicesfronted/_Apuntes.txt/Anteriores/02_ CreandoTiposdeContenido.txt",
+		"/D/curso/bienesraices(regresarlo a react)/bienesraicesfronted/_Apuntes.txt/Anteriores/instalacion strapi.txt",
+		"/D/curso/Actualizacion React 2022/Juan_guitarla-remix/.env",
+		"/D/curso/_juan/ReactJS/14 bienesraicesfrontend/gatsby-config.js",
+		"/D/curso/react/hotelgatsby/src/pages/index.js",
+		"/D/curso/react/hotelgatsby/src/components/layout.js",
+		"/D/curso/react/hotelgatsby/src/hooks/use-seo.js",
+		"/D/curso/react/hotelgatsby/package.json",
+		"/D/curso/react/hotelgatsby/src/components/imagenHotel.js",
+		"/D/curso/react/hotelgatsby/gatsby-config.js",
+		"/D/curso/react/hotelgatsby/src/hooks/use-habitaciones.js",
+		"/D/curso/react/hotelgatsby/src/components/habitaciones.js",
+		"/D/curso/react/hotelgatsby/src/components/contenidoInicio.js",
+		"/D/curso/react/hotelgatsby/public para netlify/public/404/index.html",
+		"/D/curso/_juan/ReactJS/14 bienesraicesfrontend/package.json",
+		"/D/curso/_juan/ReactJS/14 bienesraicesfrontend/gatsby-ssr.js",
+		"/D/curso/_juan/ReactJS/14 bienesraicesfrontend/gatsby-node.js",
+		"/D/curso/_juan/ReactJS/02 presupuesto_react-master/package.json",
+		"/D/curso/_juan/ReactJS/10 bebidas_react-master/package.json",
+		"/D/curso/_juan/ReactJS/11a merntasks-servidor-master/package.json",
+		"/D/curso/_juan/ReactJS/07 noticias_react-master/package.json",
+		"/D/curso/_juan/ReactJS/08 react_pixabay-master/package.json",
+		"/D/curso/_juan/ReactJS/09 letras_react-master/package.json",
+		"/C/Users/Pascual/Downloads/guitarla-remix/guitarla-remix/app/utils/helpers.js",
+		"/C/Users/Pascual/Downloads/guitarla-remix/guitarla-remix/app/routes/blog/index.jsx",
+		"/C/Users/Pascual/Downloads/guitarla-remix/guitarla-remix/app/components/listado-posts.jsx",
+		"/C/Users/Pascual/Downloads/guitarla-remix/guitarla-remix/app/components/post.jsx",
+		"/C/Users/Pascual/Downloads/guitarla-remix/guitarla-remix/app/routes/blog/$postUrl.jsx"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"D:\\curso\\Actualizacion React 2022\\GuitarLA\\guitarla-next-juan,<project filters>",
+			"D:\\curso\\Actualizacion React 2022\\GuitarLA\\guitarla-next,<project filters>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Pagina404",
+			"--white",
+			"--primary:",
+			"globa",
+			"normali",
+			"box-sizing",
+			"navegacion"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": true,
+		"use_gitignore": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 45.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 291.0
+	},
+	"pinned_build_system": "",
+	"project": "opciones-sublime.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
