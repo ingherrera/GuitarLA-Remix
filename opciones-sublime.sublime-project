@@ -1,15 +1,1 @@
-{
-	"folders":
-	[
-		{
-			"folder_exclude_patterns": ["node_modules","build",				"_Apuntes",
-				".cache",
-			],
-			"file_exclude_patterns": ["*-lock.json"],
-			"path": ".",
-		},
-		{
-			"path": "D:\\curso\\Actualizacion React 2022\\GuitarLA\\guitarla-next-juan"
-		},
-	],
-}
+
